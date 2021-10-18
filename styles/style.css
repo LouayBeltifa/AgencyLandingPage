@@ -1,0 +1,543 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+.hero {
+    background-image: url(../images/Image1.png);
+    background-size: 101%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: 0px -100px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .logo img {
+    width: 200px;
+    margin-top: 30px;
+}
+
+.navbar .nav-links {
+    margin-top: 50px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    margin: 0px 20px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+.navbar .nav-links a:hover {
+    color: #FF9C00;
+}
+
+.navbar .btnHi-box {
+    margin-top: 45px;
+}
+
+.navbar .btnHi-box a {
+    text-decoration: none;
+    color: white;
+    background-color: #FF9C00;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+.navbar .btnHi-box a:hover {
+    background-color: #d18101;
+}
+
+
+.main-text {
+    margin: 200px 0px 0px 300px;
+    color: white;
+    width: 700px;
+}
+
+.main-text h1 {
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.main-text p {
+    margin-bottom: 40px;
+}
+
+.main-text a {
+    color: white;
+    text-decoration: none;
+    background-color: #FF9C00;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+
+.main-text a:hover{
+    background-color: #d18101;
+}
+
+
+/* ------------------------------------------ Services Section Style ------------------------------------------ */
+
+.Services {
+    background-color: white;
+}
+
+.Services .title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Services .title h1 {
+    color: #072753;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.Services .title p {
+    font-size: 15px;
+}
+
+.services-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.services-box .box {
+    width: 400px;
+    margin-left: 100px;
+}
+
+.services-box .box .Title {
+    margin: 20px 0 20px 0;
+    color: #072753;
+}
+
+.services-box .box .Title p {
+    font-size: 16px;
+}
+
+.services-box .box p {
+    font-size: 12px;
+    color:#072753;
+    margin-bottom: 20px;
+    line-height: 23px;
+}
+
+.services-box .box a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #1B498A;
+}
+
+.services-cartes .carte1{
+    display: flex;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.carte1 .text {
+    width: 600px;
+    margin-right: 200px;
+    margin-left: 50px;
+}
+
+.carte1 .text h1 {
+    color: #072753;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.carte1 .text p {
+    width: 470px;
+    font-size: 12px;
+    color: #072753;
+    line-height: 23px;
+    margin-bottom: 40px;
+}
+
+.carte1 .text a {
+    color: white;
+    text-decoration: none;
+    background-color: #FF9C00;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+.carte1 .text a:hover {
+    background-color: #d18101;
+}
+
+.carte1 .image img {
+    width: 530px;
+}
+
+.services-cartes .carte2{
+    display: flex;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.carte2 .text {
+    width: 600px;
+    margin-right: 50px;
+    margin-left: 200px;
+}
+
+.carte2 .text h1 {
+    color: #072753;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.carte2 .text p {
+    width: 470px;
+    font-size: 12px;
+    color: #072753;
+    line-height: 23px;
+    margin-bottom: 40px;
+}
+
+.carte2 .text .emailbox {
+    background-color: #fff7ea;
+    width: 450px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.carte2 .text .emailbox input {
+    background-color: transparent;
+    height: 100%;
+    width: 350px;
+    padding-left: 20px;
+    font-size: 12px;
+    border: none;
+    outline: none;
+}
+
+.carte2 .text .emailbox input::placeholder {
+    color: #1B498A;
+    font-size: 12px;
+}
+
+.carte2 .text .emailbox .sendbtn {
+    background-color: #FF9C00;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.carte2 .text .emailbox .sendbtn:hover {
+    background-color: #d18101;
+}
+
+
+.carte2 .image img {
+    width: 450px;
+}
+
+
+/*--------------------------------------------- Projects Section Style ---------------------------------------*/
+
+.projects {
+    height: 100vh;
+    background-image: url(../images/BG.png);
+    display: flex;
+    flex-direction: column;
+}
+
+.projects .title {
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+}
+
+.projects .title h1 {
+    margin-bottom: 20px;
+}
+
+.projects .title p {
+    font-size: 12px;
+    line-height: 25px;
+    margin-bottom: 70px;
+}
+
+.projects .projectscartes {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.projects .projectscartes .carte {
+    color: white;
+}
+
+
+.img1 {
+    height: 500px;
+    width: 350px;
+    border-radius: 25px;
+    background-position: 0px -10px;
+    background-image: url(../images/image_processing20200903-21646-11v87o6.png);
+    box-shadow: 15px -9px 2px 1px rgba(255, 255, 255, 0.1), 30px -20px 2px 1px rgba(255, 255, 255, 0.1);
+    margin-bottom: 40px;
+}
+
+.img2 {
+    height: 500px;
+    width: 350px;
+    border-radius: 25px;
+    background-image: url(../images/Groupe\ de\ masques\ 2.png);
+    box-shadow: 15px -9px 2px 1px rgba(255, 255, 255, 0.1), 30px -20px 2px 1px rgba(255, 255, 255, 0.1);
+    margin-bottom: 40px;
+}
+
+.img3 {
+    height: 500px;
+    width: 350px;
+    border-radius: 25px;
+    background-image: url(../images/Groupe\ de\ masques\ 3.png);
+    box-shadow: 15px -9px 2px 1px rgba(255, 255, 255, 0.1), 30px -20px 2px 1px rgba(255, 255, 255, 0.1);
+    margin-bottom: 40px;
+}
+
+.projects .projectscartes .carte .t {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.projects .projectscartes .carte p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+.projects .projectscartes .carte a {
+    color: #FF9C00;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+
+/* -------------------------------------  Commentaires Section style ------------------------------------- */
+
+.commentaires {
+    display: flex;
+    flex-direction: column;
+}
+
+.commentaires .commentbox {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.commentaires .commentsection {
+    display: flex;
+}
+
+.commentaires .commentbox .commentsection .image {
+    background-image: url(../images/Image4.png);
+    width: 400px;
+    height: 360px;
+    margin-left: -50px;
+    margin-top: 40px;
+    margin-right: 60px;
+    border-radius: 15px;
+}
+.commentaires .commentbox .commentsection .text {
+    margin-top: 50px;
+}
+
+.commentaires .commentbox .commentsection .text p {
+    width: 450px;
+    font-size: 12px;
+    color: #1B498A;
+    line-height: 30px;
+}
+
+.commentaires .commentbox .commentsection .text .name {
+    font-size: 17px;
+    color: #072753;    
+}
+
+.commentaires .commentbox .commentsection .text .poste {
+    font-size: 10px;
+    color: #072753;
+    margin-bottom: 30px;    
+}
+
+.commentaires .commentbox .commentsection .text .message {
+    margin-bottom: 40px;
+}
+
+.commentaires .commentbox .commentsection .text .buttons button {
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    margin-left: 20px;
+    color: #FF9C00;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid #072753;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.commentaires .commentbox .commentsection .text .buttons button:hover {
+    background-color: #072753;
+    color: #FF9C00;
+}
+
+.commentaires .sponsorsbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.commentaires .sponsorsbox img {
+    margin: 0 60px 0 60px;
+}
+
+footer {
+    background-color: #011021;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer .footer-header {
+    display: flex;
+    color: white;
+    margin-top: 50px;
+}
+
+footer .footer-header .comp {
+    margin-right: 200px;
+    margin-left: 300px;
+} 
+
+footer .footer-header .comp .emailbox p{
+    margin-bottom: 30px;
+}
+
+footer .footer-header .comp .emailbox form{
+    background-color: white;
+    height: 50px;
+    border-radius: 5px;
+}
+
+footer .footer-header .comp .emailbox form input {
+    height: 100%;
+    width: 74%;
+    padding-left: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+footer .footer-header .comp .emailbox form button{
+    background-color: #1B498A;
+    padding: 18px 16px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+footer .footer-header .comp .logo {
+    margin-bottom: 30px;
+}
+
+footer .footer-header .comp .logo p{
+    color: #A9B2BC;
+    font-size: 12px;
+    width: 300px;
+}
+
+footer .footer-header .comp .logo img {
+    margin-bottom: 20px;
+}
+
+footer .footer-header .links {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 50px 0px 50px;
+}
+
+footer .footer-header .links p {
+    margin-bottom: 25px;
+    color: #A9B2BC;
+}
+
+footer .footer-header .links a {
+    text-decoration: none;
+    color: #A9B2BC;
+    margin-bottom: 20px;
+
+}
+
+footer .footer-header .links a:hover {
+    color: #FF9C00;
+
+}
+
+hr {
+    width: 70%;
+    margin: auto;
+    border: 1px solid #051e42;
+}
+
+footer .footer-foot {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+footer .footer-foot a {
+    color: #A9B2BC;
+    text-decoration: none;
+    margin: 0px 10px 0 10px;
+    font-size: 15px;
+}
+
+footer .footer-foot .sociallinks-logo img {
+    width: 40px;
+}
+footer .footer-foot .copy {
+    color: white;
+}
