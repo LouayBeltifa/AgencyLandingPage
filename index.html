@@ -5,23 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Document</title>
+    <title>Dhaker Sghaier - Website</title>
 </head>
 <body>
+    <div class="Modal" id="HiModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1>Get In Touch</h1>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="inputbox">
+                        <input type="text" placeholder="Enter your name" id="Username">
+                        <input type="email" placeholder="Enter your email" id="Useremail">
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" placeholder="Enter your phone" id="Userphone">
+                        <input type="text" placeholder="Enter your subject" id="Usersubject ">
+                    </div>
+                    <div class="inputbox">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message" itemid="Usermessage"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn sendbtn" id="SendBtn">Send</button>
+                <button class="btn closebtn" id="CloseBtn">Close</button>
+            </div>
+        </div>
+    </div>
+    <div class="overlay" id="ModalOverlay"></div>
     <div class="hero" id="home">
         <nav class="navbar">
             <div class="logo">
                 <a href="./index.html"><img src="./images/Logo1.png" alt="logo"></a>
             </div>
             <div class="nav-links">
-                <a href="#home">Home</a>
+                <a href="#home" class="CurrentRoute">Home</a>
                 <a href="#projects">Our Work</a>
-                <a href="#">About US</a>
+                <a href="#OurServices">Our Services</a>
                 <a href="#reviews">Review</a>
-                <a href="#">Contact US</a>
+                <a href="#" id="ContactUsBtn">Contact US</a>
             </div>
             <div class="btnHi-box">
-                <a href="" class="btnHi">Say Hi</a>
+                <button class="btnHi" id="BtnHi">Say Hi</button>
             </div>
         </nav>
         <div class="main-text">
@@ -31,7 +58,7 @@
         </div>
     </div>
 
-    <div class="Services">
+    <div class="Services" id="OurServices">
         <div class="title">
             <h1>Our Services</h1>
             <p>That are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, <br> which is the same as saying through</p>
@@ -219,5 +246,7 @@
         </div>
         
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
